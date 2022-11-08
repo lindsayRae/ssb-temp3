@@ -1,0 +1,21 @@
+.circle {
+  margin-bottom: 2rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container img {
+  max-width: 350px;
+  height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    display: block;
+  }
+  .footer-container img {
+    max-width: 200px;
+  }
+}
