@@ -294,19 +294,19 @@
       <section class="wrapper style1 align-center">
         <div class="inner medium">
           <h2>Get in touch</h2>
-          <form method="post" action="#">
+          <form action="/api/email" method="post" id="emailForm">
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" value="" />
+                <input type="text" name="name" id="formFullName" value="" />
               </div>
               <div class="field half">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="" />
+                <input type="email" name="email" id="formEmail" value="" />
               </div>
               <div class="field">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6"></textarea>
+                <textarea name="message" id="formMessage" rows="6"></textarea>
               </div>
             </div>
             <ul class="actions special">
@@ -314,7 +314,7 @@
                 <input
                   type="submit"
                   name="submit"
-                  id="submit"
+                  id="contactSubmitBtn"
                   value="Send Message"
                 />
               </li>
@@ -372,5 +372,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
